@@ -1,0 +1,4 @@
+<opt>
+  <!-- NOTE: set close_at_close to exit when closing main window -->
+  <general app_version="0.93.1Rev.1278" close_at_close="" />
+</opt>
