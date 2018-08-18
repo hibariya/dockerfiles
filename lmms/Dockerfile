@@ -3,7 +3,7 @@
 #   docker run -d --rm \
 #     -v /tmp/.X11-unix:/tmp/.X11-unix \
 #     -v /dev/shm:/dev/shm \
-#     -v "${HOME}/Dropbox/lmms:/lmms" \
+#     -v "${HOME}/Dropbox/lmms:/root/lmms" \
 #     -e DISPLAY=unix$DISPLAY \
 #     --device /dev/snd \
 #     --group-add $(getent group audio | cut -d: -f3) \
