@@ -22,5 +22,5 @@ LABEL maintainer "hibariya@gmail.com"
 
 USER root
 RUN apt-get update \
-    && apt-get install -yq --no-install-recommends pulseaudio \
+    && apt-get install -yq --no-install-recommends pulseaudio fonts-noto-cjk \
     && rm -rf /var/lib/apt/lists/*
