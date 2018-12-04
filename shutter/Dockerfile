@@ -3,11 +3,13 @@
 # docker run -d --rm \
 #   -v /etc/localtime:/etc/localtime:ro \
 #   -v /tmp/.X11-unix:/tmp/.X11-unix \
-#   -v "${HOME}/Pictures:/root/Pictures" \
-#   -v "${HOME}/.shutter/settings.xml:/root/.shutter/settings.xml" \
+#   -v "${HOME}/Pictures:${HOME}/Pictures" \
+#   -v "${HOME}/.shutter/settings.xml:${HOME}/.shutter/settings.xml" \
+#   -e "HOME=${HOME}" \
 #   -e "DISPLAY=unix${DISPLAY}" \
 #   --name shutter \
 #   hibariya/shutter "$@"
+
 
 FROM debian:stretch
 
