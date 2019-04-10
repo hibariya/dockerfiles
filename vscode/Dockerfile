@@ -16,5 +16,7 @@ FROM r.j3ss.co/vscode
 LABEL maintainer "hibariya@gmail.com"
 
 RUN apt-get update \
-    && apt-get install -yq --no-install-recommends fonts-noto-cjk \
+    && apt-get install -yq --no-install-recommends \
+    fonts-noto-cjk \
+    ruby ruby-dev \
     && rm -rf /var/lib/apt/lists/*
